@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback Example</title>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  <div id="myDiv"></div>
+  
+
+  
+
+  <script>
+    function handleClick() {
+     let output = document.getElementById('myDiv');
+     output.innerHTML += 'Button clicked!';
+      
+    }
+
+    // 为按钮添加点击事件处理程序
+    document.getElementById('myButton').addEventListener('click', handleClick);
+  </script>
+</body>
+</html>
